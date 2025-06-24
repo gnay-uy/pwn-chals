@@ -1,18 +1,17 @@
-// gcc -o chal chal.c -O0 -fno-pie -no-pie -fstack-protector
+// gcc -o chal chal.c -fstack-protector -Wl,-z,relro,-z,now
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-void win() { system("cat flag.txt"); }
-
 int main() {
     setbuf(stdin, NULL);
     setbuf(stdout, NULL);
     char buf[32];
-    FILE* note = fopen("notes.txt", "w");
-    printf("set your title\n> ");
-    scanf("%s", note);
-    printf("write your note\n> ");
-    scanf("%32s", buf);
-    fprintf(note, "%s", buf);
-    puts(NULL);
+    while (1) {
+        printf("what do you say to the wall?\n> ");
+        scanf("%s", buf);
+        if (strcmp(buf, "bye")==0) return 0;
+        printf("the wall says: ");
+        printf(buf);
+        printf("\n");
+    }
+    return 0;
 }
