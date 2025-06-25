@@ -13,6 +13,6 @@ int main() {
     scanf("%s", note);
     printf("write your note\n> ");
     scanf("%32s", buf);
-    fprintf(note, buf);
+    fprintf(note, "%s", buf);
     puts(NULL);
 }
