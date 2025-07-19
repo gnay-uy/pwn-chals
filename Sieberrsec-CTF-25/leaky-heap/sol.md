@@ -1,0 +1,1 @@
+classic tcache, allocate to bss and change 0 to 1

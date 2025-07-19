@@ -1,0 +1,1 @@
+remove null ptr to leak main, system binsh using system@plt 

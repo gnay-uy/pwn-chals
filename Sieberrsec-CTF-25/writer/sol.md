@@ -1,0 +1,1 @@
+read dereferences from bss, offset to deref stdout and fsop
