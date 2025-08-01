@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-char* string = "Try and leak me!";
+char string[] = "Try and leak me!";
 int main() {
 	setbuf(stdin, NULL);
 	setbuf(stdout, NULL);
