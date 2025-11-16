@@ -1,0 +1,1 @@
+negative index to attack rip of next called function, redirect to win

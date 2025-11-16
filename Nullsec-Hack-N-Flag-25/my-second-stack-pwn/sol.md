@@ -1,0 +1,1 @@
+partial overwrite and stack pivot to leak libc, ld, then stack, then rop
